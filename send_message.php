@@ -7,17 +7,17 @@ $message = $_POST['message'];
 echo "Message: ".$message."\n";
 $accessToken = file_get_contents("server_key.txt");
 echo "Server key: ".$accessToken."\n";
-/*data = [
-        'message' => [
+$data = array(
+        'message' => array(
             'topic' => '/topics/all',
-            'notification' => [
+            'notification' => array(
                 'title' => "Hello world",
                 'body' => "This is a notification test",
-            ],
-            'data' => [
-            ]
-        ]
-    ];*/
+            ),
+            'data' => array(
+            )
+        )
+);
 
     // Initialize cURL
     $ch = curl_init();
