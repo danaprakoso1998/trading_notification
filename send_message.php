@@ -23,7 +23,7 @@ data = [
     $ch = curl_init();
 
     // Set cURL options
-    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_URL, "https://fcm.googleapis.com/v1/projects/buysell-signaller/messages:send");
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Authorization: Bearer ' . $accessToken,
