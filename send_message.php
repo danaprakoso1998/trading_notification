@@ -1,6 +1,7 @@
 <?php
 $message = $_POST['message'];
 $accessToken = file_get_contents("server_key.txt");
+echo "Server key: ".$accessToken."\n";
 data = [
         'message' => [
             'topic' => '/topics/all',
@@ -29,4 +30,4 @@ data = [
     // Execute the request
     $response = curl_exec($ch);
     
-    echo $response;
+    echo "Result: ".$response;
