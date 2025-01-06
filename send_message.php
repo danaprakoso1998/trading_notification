@@ -13,10 +13,10 @@ $data = array(
             /*'notification' => array(
                 'title' => "Hello world",
                 'body' => "This is a notification test",
-            )*/
-        ),
-        'data' => array(
-          'type' => 'new_trade_potential'
+            )*/,
+            'data' => array(
+                'type' => 'new_trade_potential'
+            )
         )
 );
 
