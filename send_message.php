@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 echo "Test...\n";
-$message = $_GET['message'];
+$type = $_GET['type'];
 echo "Message: ".$message."\n";
 $accessToken = file_get_contents("server_key.txt");
 echo "Server key: ".$accessToken."\n";
@@ -15,7 +15,7 @@ $data = array(
                 'body' => "This is a notification test",
             ),*/
             'data' => array(
-                'type' => 'new_trade_potential'
+                'type' => $type
             )
         )
 );
