@@ -10,10 +10,10 @@ echo "Server key: ".$accessToken."\n";
 $data = array(
         'message' => array(
             'token' => '/topics/all',
-            'notification' => array(
+            /*'notification' => array(
                 'title' => "Hello world",
                 'body' => "This is a notification test",
-            )
+            )*/
         )
 );
 
