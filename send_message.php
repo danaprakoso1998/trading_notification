@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 echo "Test...\n";
 $type = $_GET['type'];
-echo "Message: ".$message."\n";
+echo "Type: ".$type."\n";
 $accessToken = file_get_contents("server_key.txt");
 echo "Server key: ".$accessToken."\n";
 $data = array(
