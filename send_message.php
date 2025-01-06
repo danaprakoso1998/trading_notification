@@ -9,7 +9,7 @@ $accessToken = file_get_contents("server_key.txt");
 echo "Server key: ".$accessToken."\n";
 $data = array(
         'message' => array(
-            'topic' => '/topics/all',
+            'token' => '/topics/all',
             'notification' => array(
                 'title' => "Hello world",
                 'body' => "This is a notification test",
