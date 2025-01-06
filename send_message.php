@@ -28,3 +28,5 @@ data = [
 
     // Execute the request
     $response = curl_exec($ch);
+    
+    echo $response;
