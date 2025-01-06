@@ -17,7 +17,7 @@ echo "Server key: ".$accessToken."\n";
             'data' => [
             ]
         ]
-    ];
+    ];*/
 
     // Initialize cURL
     $ch = curl_init();
@@ -30,9 +30,9 @@ echo "Server key: ".$accessToken."\n";
         'Content-Type: application/json',
     ]);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+    //curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
     // Execute the request
     $response = curl_exec($ch);
     
-    echo "Result: ".$response;*/
+    echo "Result: ".$response;
