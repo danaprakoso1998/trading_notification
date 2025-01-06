@@ -1,5 +1,7 @@
 <?php
+echo "Test...\n";
 $message = $_POST['message'];
+echo "Message: ".$message."\n";
 $accessToken = file_get_contents("server_key.txt");
 echo "Server key: ".$accessToken."\n";
 data = [
