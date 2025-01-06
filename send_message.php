@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 echo "Test...\n";
-$message = $_POST['message'];
+$message = $_GET['message'];
 echo "Message: ".$message."\n";
 $accessToken = file_get_contents("server_key.txt");
 echo "Server key: ".$accessToken."\n";
