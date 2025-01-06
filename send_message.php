@@ -30,7 +30,7 @@ $data = array(
         'Content-Type: application/json',
     ]);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    //curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
     // Execute the request
     $response = curl_exec($ch);
